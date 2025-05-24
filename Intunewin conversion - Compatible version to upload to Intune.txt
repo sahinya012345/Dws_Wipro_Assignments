@@ -1,0 +1,10 @@
+﻿Deploy a win32 app to windows devices using Microsofr Intune-
+ 
+To create a .intunewin file compatible with Intune, you'll need to use the Microsoft Win32 Content Prep Tool. This tool converts various app installation files (like MSI, EXE, .msu) into the .intunewin format, which is then used for deploying applications to devices managed by Intune. The most important part is using this tool to convert the app package into the required format. [1, 1, 2, 2, 3, 4]
+ 
+Here's a breakdown of the process:
+1. Download the Win32 Content Prep Tool: You can download the tool from Microsoft's official documentation. [1, 1, 4, 4]
+2. Prepare the app package: The tool takes your original app installation files and processes them to create the .intunewin package. [1, 1, 2, 2, 4, 4]
+3. Upload the .intunewin to Intune: Once the package is created, you can upload it to the Intune admin center to add it as a new app, according to Microsoft. [1, 1, 2, 2, 5, 5]
+4. Configure app details: You'll need to provide information like the app's name, description, privacy policy, and the commands to install and uninstall the app. [2, 2, 6, 6, 7, 7]
+5. Assign the app to users or groups: Finally, you'll assign the app to the appropriate groups within your organization to ensure it gets deployed to the intended devices. [6, 7, 8, 9]
